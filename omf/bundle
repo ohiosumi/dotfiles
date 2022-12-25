@@ -1,0 +1,6 @@
+package fzf
+package https://github.com/jorgebucaran/autopair.fish
+package https://github.com/nickeb96/puffer-fish
+package z
+theme default
+theme slacker
