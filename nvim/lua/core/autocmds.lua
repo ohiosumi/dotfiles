@@ -1,14 +1,17 @@
 vim.cmd[[
 
 augroup _general_settings
-    autocmd FileType qf,help,man,lspinfo nnoremap <silent> <buffer> q :close<CR> 
+    autocmd FileType qf,help,man,lspinfo nnoremap <silent> <buffer> q :close<CR>
     autocmd TextYankPost * silent! lua vim.highlight.on_yank {higroup=(vim.fn['hlexists']('HighlightedyankRegion') > 0 and 'HighlightedyankRegion' or 'IncSearch'), timeout=500}
     autocmd BufWinEnter * :set formatoptions-=cro
-    autocmd BufWinEnter * :set nolist 
-    autocmd BufWinEnter * :TransparentToggle
+    autocmd BufWinEnter * :set nolist
     autocmd BufWinEnter * :COQnow --shut-up
     autocmd FileType qf set nobuflisted
     autocmd CursorHold,CursorHoldI * lua vim.diagnostic.open_float(nil, {focus=false})
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
+autocmd ColorScheme * highlight Normal guibg=NONE ctermbg=NONE
+autocmd ColorScheme * highlight NonText guibg=NONE ctermbg=NONE
 augroup end
 
 augroup _git
@@ -25,7 +28,7 @@ augroup end
 
 augroup _auto_resize
     autocmd!
-    autocmd VimResized * tabdo wincmd = 
+    autocmd VimResized * tabdo wincmd =
 augroup end
 
 augroup _alpha
@@ -33,10 +36,15 @@ augroup _alpha
     autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
 augroup end
 
-augroup packer_user_config
+augroup _packer_user_config
     autocmd!
     autocmd BufWritePost plugins.lua source <afile> | PackerSync
 augroup end
+
+augroup FormatAutogroup
+  autocmd!
+  autocmd BufWritePost * FormatWrite
+augroup END
 
 "augroup _lsp
 "  autocmd!

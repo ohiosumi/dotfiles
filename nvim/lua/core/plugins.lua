@@ -31,40 +31,55 @@ return require('packer').startup(function(use)
   use 'wbthomason/packer.nvim'
 
   -- ColorSchemes
-  use { "catppuccin/nvim", as = "catppuccin" }
+  use { 'catppuccin/nvim', as = 'catppuccin' }
+  use 'sainnhe/gruvbox-material'
+  use 'pineapplegiant/spaceduck'
+  use 'protesilaos/tempus-themes'
+  use 'projekt0n/github-nvim-theme'
   use 'joshdick/onedark.vim'
-  use("xiyaowong/nvim-transparent")
+  use 'xiyaowong/nvim-transparent'
 
   use { 'goolord/alpha-nvim', config = function () require'alpha'.setup(require'alpha.themes.dashboard'.config) end }
-  use { 'alvarosevilla95/luatab.nvim', requires='kyazdani42/nvim-web-devicons' }
+  use 'alvarosevilla95/luatab.nvim'
   use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' }, tag = 'nightly' }
-  use { 'nvim-lualine/lualine.nvim', requires = { 'kyazdani42/nvim-web-devicons', opt = true } }
+  use 'nvim-lualine/lualine.nvim'
   use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-  use "akinsho/toggleterm.nvim"
-  use { "folke/zen-mode.nvim", config = function() require("zen-mode").setup() end }
-  use { "folke/which-key.nvim", config = function() require("which-key").setup() end }
-  use("lewis6991/gitsigns.nvim")
+  use { 'akinsho/toggleterm.nvim',  config = function() require("toggleterm").setup() end}
+  use { 'folke/zen-mode.nvim', config = function() require('zen-mode').setup() end }
+  use { 'folke/which-key.nvim', config = function() require('which-key').setup() end }
+  use 'lewis6991/gitsigns.nvim'
 
   -- Syntax
-  use("nvim-treesitter/nvim-treesitter")
-  use("onsails/lspkind.nvim")
-  use("norcalli/nvim-colorizer.lua")
-  use "lukas-reineke/indent-blankline.nvim"
+  use 'nvim-treesitter/nvim-treesitter'
+  use 'onsails/lspkind.nvim'
+  use 'norcalli/nvim-colorizer.lua'
+  use 'lukas-reineke/indent-blankline.nvim'
 
   -- Editing
-  use("windwp/nvim-autopairs")
-  use("mg979/vim-visual-multi")
-  use { 'numToStr/Comment.nvim', requires = { 'JoosepAlviste/nvim-ts-context-commentstring' } }
+  use 'windwp/nvim-autopairs'
+  use { 'numToStr/Comment.nvim', config = function()
+        require("Comment").setup {
+            toggler = {
+                block = "g//",
+            },
+            opleader = {
+                block = "g/",
+            },
+        }
+  end}
+  use 'mhartington/formatter.nvim'
+--  use 'mg979/vim-visual-multi'
+
   -- Language Servers
-  use("neovim/nvim-lspconfig")
+  use 'neovim/nvim-lspconfig'
   use 'jose-elias-alvarez/null-ls.nvim'
-  use("ms-jpq/coq_nvim")
-  use("ms-jpq/coq.artifacts")
-  use("ms-jpq/coq.thirdparty")
- use 'glepnir/lspsaga.nvim'
+  use 'ms-jpq/coq_nvim'
+  use 'ms-jpq/coq.artifacts'
+  use 'ms-jpq/coq.thirdparty'
+  use 'glepnir/lspsaga.nvim'
   use 'L3MON4D3/LuaSnip'
-  use "lukas-reineke/lsp-format.nvim"
-  use { "folke/trouble.nvim", requires = "kyazdani42/nvim-web-devicons", config = function() require("trouble").setup() end }
+  use 'lukas-reineke/lsp-format.nvim'
+  use { 'folke/trouble.nvim', config = function() require('trouble').setup() end }
 
   if packer_bootstrap then
     require('packer').sync()
