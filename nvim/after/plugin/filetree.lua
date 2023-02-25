@@ -22,8 +22,8 @@ require("nvim-tree").setup({
 	},
 
 	view = {
-		width = 6,
-		side = "right",
+		width = 10,
+		side = "left",
 		adaptive_size = true,
 		mappings = {
 			list = {
@@ -95,6 +95,7 @@ require("nvim-tree").setup({
 	filters = {
 		custom = {
 			"^.git$",
+      "^.node_modules$"
 		}
 	},
   actions = {

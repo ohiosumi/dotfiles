@@ -6,22 +6,12 @@ map("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = " "
 
--- modes
---   normal_mode = "n",
---   insert_mode = "i",
---   visual_mode = "v",
---   visual_block_mode = "x",
---   term_mode = "t",
---   command_mode = "c",
-
 -- files
 map("n", "<C-q>", ":q!<CR>", opts)
 map("n", "<C-s>", ":w<CR>", opts)
-map("n", "<C-f>", ":NvimTreeToggle<CR>", opts)
-map("n", "<F8>", ":sp<CR>:terminal<CR>", opts)
+map("n", "<C-b>", ":NvimTreeToggle<CR>", opts)
+map("n", "T", ":sp<CR>:terminal<CR>", opts)
 map("n", "<C-p>", ':lua require("telescope.builtin").find_files()<CR>', opts)
-map("n", "<leader>c", ':TransparencyToggle()<cr>',opts)
-map('n', '<C-w>o', '<cmd>ZenMode<cr>',opts)
 
 -- navigate tabs
 map("n", "<S-Tab>", "gT", opts)
@@ -53,7 +43,7 @@ map('n', ';', ':', opts)
 map('n', 'da', 'vb"_d', opts)
 
 -- selects all text from current buffer
-map('n', '<C-a>', 'gg<S-v>G', opts)
+--map('n', '<C-a>', 'gg<S-v>G', opts)
 
 -- clear search highlight
 map('n', 'coh', '<Cmd>nohlsearch<CR>', opts)
@@ -98,4 +88,9 @@ map("n", "[d", "vim.diagnostic.goto_prev", opts)
 map("n", "]d", "vim.diagnostic.goto_next", opts)
 map("n", "<space>q", "vim.diagnostic.setloclist", opts)
 
------------------------------------------ End of The line
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<leader>ff', builtin.find_files, {})
+vim.keymap.set('n', '<leader>fg', builtin.live_grep, {})
+vim.keymap.set('n', '<leader>fb', builtin.buffers, {})
+vim.keymap.set('n', '<leader>fh', builtin.help_tags, {})
+

@@ -1,5 +1,4 @@
-
-
+-- lsp keymaps
 local on_attach = function(client, bufnr)
   vim.api.nvim_buf_set_option(bufnr, 'omnifunc', 'v:lua.vim.lsp.omnifunc')
 
@@ -24,14 +23,18 @@ local on_attach = function(client, bufnr)
   map('n', '<space>f', function() vim.lsp.buf.format { async = true } end, bufopts)
 end
 
--- CoQ.Nvim
+-- lsp
+local servers = {
+  'tsserver',
+  'markdownlint'
+}
+
 local lspc = require "lspconfig"
 local coq = require "coq"
-local servers = { 'tsserver', 'stylelint-lsp`'}
-vim.g.coq_settings = { auto_start = 'shut-up' }
 
 for _, lsp in ipairs(servers) do
   lspc[lsp].setup(require('coq').lsp_ensure_capabilities({
      on_attach = on_attach,
   }))
 end
+

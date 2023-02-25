@@ -2,21 +2,43 @@
 set fish_greeting                                 # Supresses fish's intro message
 set TERM "xterm-256color"                         # Sets the terminal type
 set EDITOR "nvim"
-set VISUAL "nvim" 
-
-set -g theme_color_scheme terminal-dark
-set -g fish_prompt_pwd_dir_length 1
-set -g theme_display_user yes
-set -g theme_hide_hostname no
-set -g theme_hostname always
-
+set VISUAL "nvim"
+export PATH="$HOME/.local/bin:$HOME/.local/bin/scripts:$PATH"
 ### "bat" as manpager
 set -x MANPAGER "sh -c 'col -bx | bat -l man -p'"
 
 ### "nvim" as manpager
 ##set -x MANPAGER "nvim -c 'set ft=man' -"
 
-export NNN_TMPFILE='/tmp/.lastd'
+set theme_primary                                   1eb980
+set theme_secondary                                 ffcf44
+set theme_primary_variant                           045d56
+set theme_secondary_variant                         ff6859
+set theme_hilight                                   b15dff
+
+set -g theme_color_user                             $theme_hilight
+set -g theme_color_host                             $theme_primary_variant
+set -g theme_color_separator                        brblack
+set -g theme_color_normal                           normal
+set -g theme_color_time                             $theme_secondary_variant
+set -g theme_color_path                             $theme_primary
+set -g theme_color_prompt                           $theme_secondary_variant
+set -g theme_color_virtualenv                       $theme_secondary
+set -g theme_color_status_prefix                    $theme_hilight
+set -g theme_color_status_jobs                      $theme_primary
+set -g theme_color_status_rw                        $theme_primary
+set -g theme_display_group                          no
+set -g theme_prompt_segment_separator_color         $theme_primary
+set -g theme_prompt_userhost_separator              '.'
+set -g __fish_git_prompt_char_branch_begin          '['
+set -g __fish_git_prompt_char_branch_end            ']'
+set -g __fish_git_prompt_color_branch_begin         brblack
+set -g __fish_git_prompt_color_branch_end           brblack
+set -g __fish_git_prompt_color_branch               $theme_secondary
+
+set -gx fish_prompt_pwd_dir_length                  1
+set -g theme_display_jobs_always                    yes
+
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -26,6 +48,7 @@ alias .5='cd ../../../../..'
 
 # vim
 alias vim='nvim'
+alias vi= 'nvim'
 
 # Changing "ls" to "exa"
 alias ls='exa -al --color=always --group-directories-first --icons' # my preferred listing
@@ -45,7 +68,6 @@ alias rf='rm -rf'
 # adding flags
 alias df='df -h'                          # human-readable sizes
 alias free='free -m'                      # show sizes in MB
-alias vi='vifm'
 alias f='nnn -oxHgeDdC'
 alias ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/'
 

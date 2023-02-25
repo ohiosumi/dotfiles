@@ -1,87 +1,52 @@
-local status, packer = pcall(require, "packer")
-if (not status) then
-  print("Packer is not installed")
-  return
+-- lazy.nvim bootstrap
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
+vim.opt.rtp:prepend(lazypath)
 
+require("lazy").setup({
 
-local ensure_packer = function()
-  local fn = vim.fn
-  local install_path = fn.stdpath('data')..'/site/pack/packer/start/packer.nvim'
-  if fn.empty(fn.glob(install_path)) > 0 then
-    fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
-    vim.cmd [[packadd packer.nvim]]
-    return true
-  end
-  return false
-end
+-- colors
+  'pineapplegiant/spaceduck',
+  'projekt0n/github-nvim-theme',
+  'xiyaowong/nvim-transparent',
 
-local packer_bootstrap = ensure_packer()
+  'goolord/alpha-nvim',
+  'nvim-lualine/lualine.nvim',
+  'lewis6991/gitsigns.nvim',
+  'alvarosevilla95/luatab.nvim',
+  'nvim-tree/nvim-tree.lua',
+  'nvim-telescope/telescope.nvim',
+  'nvim-lua/plenary.nvim',
 
-require('packer').init({
-	display = {
-		open_fn = function()
-			return require("packer.util").float({ border = "rounded" })
-		end,
-	},
+-- lsp configs
+  'neovim/nvim-lspconfig',
+  'onsails/lspkind.nvim',
+  'glepnir/lspsaga.nvim',
+  'folke/trouble.nvim',
+
+-- completion
+  'ms-jpq/coq_nvim',
+  'ms-jpq/coq.artifacts',
+  'ms-jpq/coq.thirdparty',
+
+  'nvim-treesitter/nvim-treesitter',
+  'norcalli/nvim-colorizer.lua',
+  'nvim-tree/nvim-web-devicons',
+  'lukas-reineke/indent-blankline.nvim',
+  'xiyaowong/nvim-cursorword',
+  'mawkler/modicator.nvim', 
+  'windwp/nvim-autopairs',
+  'numToStr/Comment.nvim',
+  "kylechui/nvim-surround"
+  
 })
-return require('packer').startup(function(use)
 
-  -- Plugin Manager
-  use 'wbthomason/packer.nvim'
-
-  -- ColorSchemes
-  use { 'catppuccin/nvim', as = 'catppuccin' }
-  use 'sainnhe/gruvbox-material'
-  use 'pineapplegiant/spaceduck'
-  use 'protesilaos/tempus-themes'
-  use 'projekt0n/github-nvim-theme'
-  use 'joshdick/onedark.vim'
-  use 'xiyaowong/nvim-transparent'
-
-  use { 'goolord/alpha-nvim', config = function () require'alpha'.setup(require'alpha.themes.dashboard'.config) end }
-  use 'alvarosevilla95/luatab.nvim'
-  use { 'nvim-tree/nvim-tree.lua', requires = { 'nvim-tree/nvim-web-devicons' }, tag = 'nightly' }
-  use 'nvim-lualine/lualine.nvim'
-  use { 'nvim-telescope/telescope.nvim', requires = { 'nvim-lua/plenary.nvim' } }
-  use { 'akinsho/toggleterm.nvim',  config = function() require("toggleterm").setup() end}
-  use { 'folke/zen-mode.nvim', config = function() require('zen-mode').setup() end }
-  use { 'folke/which-key.nvim', config = function() require('which-key').setup() end }
-  use 'lewis6991/gitsigns.nvim'
-
-  -- Syntax
-  use 'nvim-treesitter/nvim-treesitter'
-  use 'onsails/lspkind.nvim'
-  use 'norcalli/nvim-colorizer.lua'
-  use 'lukas-reineke/indent-blankline.nvim'
-
-  -- Editing
-  use 'windwp/nvim-autopairs'
-  use { 'numToStr/Comment.nvim', config = function()
-        require("Comment").setup {
-            toggler = {
-                block = "g//",
-            },
-            opleader = {
-                block = "g/",
-            },
-        }
-  end}
-  use 'mhartington/formatter.nvim'
---  use 'mg979/vim-visual-multi'
-
-  -- Language Servers
-  use 'neovim/nvim-lspconfig'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'ms-jpq/coq_nvim'
-  use 'ms-jpq/coq.artifacts'
-  use 'ms-jpq/coq.thirdparty'
-  use 'glepnir/lspsaga.nvim'
-  use 'L3MON4D3/LuaSnip'
-  use 'lukas-reineke/lsp-format.nvim'
-  use { 'folke/trouble.nvim', config = function() require('trouble').setup() end }
-
-  if packer_bootstrap then
-    require('packer').sync()
-  end
-end)
