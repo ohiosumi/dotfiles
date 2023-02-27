@@ -1,0 +1,2 @@
+kill swaybg
+exec swaybg -i $1
