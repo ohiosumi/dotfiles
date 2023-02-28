@@ -16,7 +16,7 @@ alias ...='cd ../..'
 # nvim
 alias vim='nvim'
 alias vi= 'nvim'
-alias bat='bat --style="plain,numbers,changes,header" --color always --theme TwoDark'
+alias cat="bat --style='plain,numbers,changes,header' --color always --theme TwoDark"
 
 # changing 'ls' to 'exa'
 alias ls='exa -a --color=always --group-directories-first --icons' # my preferred listing
@@ -87,3 +87,4 @@ set -g __fish_git_prompt_color_branch               $theme_secondary
 
 set -gx fish_prompt_pwd_dir_length                  1
 set -g theme_display_jobs_always                    yes
+fish_add_path /home/sumi/.spicetify

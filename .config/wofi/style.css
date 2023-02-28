@@ -1,12 +1,13 @@
 * {
   transition: 0.2s;
+  background-color: rgba(11,5,6, 0.8);
 }
 
 window {
 	font-family: "FiraCode Nerd Font Mono";
 	font-size: 13px;
   border: 5px solid #111019;
-  background-color: rgba(11, 10, 16, 0.9);
+  background-color: rgba(11,5,6, 0.8);
   margin: 0px;
   background-color: #161925;
   border-radius: 16px;
@@ -17,9 +18,8 @@ window {
   padding: 4px 10px;
   margin: 4px;
   border: none;
-  color: #e2e0ec;
   font-weight: bold;
-  background-color: #161420;
+  background-color: rgba(11,5,6, 0.8);
   outline: none;
   border-radius: 15px;
   margin: 10px;
