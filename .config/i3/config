@@ -1,0 +1,257 @@
+#########     Configuration    #########
+
+    # Default font
+    font pango: RobotoMono Nerd Font 14
+
+    # Key to do all the things (Mod1=Alt, Mod4=Super/Windows)
+        set $mod Mod4
+
+    # Default Terminal
+        set $term alacritty
+
+    # Autofocus on hover, also when switching workspaces
+        focus_follows_mouse yes
+
+    # Borders
+        new_window pixel
+        default_border none
+        default_floating_border none
+
+        # Hide borders at the edge of the screen
+        hide_edge_borders smart
+
+        client.focused           #9aa5ce #364A82 #c0caf5 #9aa5ce   #9aa5ce
+        client.focused_inactive  #16161d #16161d #c0caf5 #16161d   #16161d
+        client.unfocused         #16161d #16161d #c0caf5 #16161d   #16161d
+
+    # Gaps
+        gaps inner 5
+        gaps outer 1
+
+        # Hide gaps when there is only 1 window
+        smart_gaps off
+
+#########    Key Bindindings   #########
+
+    # Start a terminal
+        bindsym $mod+t exec $term
+        bindsym $mod+n exec $term -e 'neofetch'
+        bindsym $mod+e exec $term -t "Tasks" -e 'btop'
+
+    # Kill focused window
+        bindsym $mod+q kill
+
+    # Program Launcher
+        bindsym $mod+d exec dmenu_run -nb '#1e1e1e' -sf '#1e1e1e' -sb '#FF5555' -nf '#FF5555'
+
+    # Resize (floating and tiled) windows with mouse
+        floating_modifier $mod
+
+    # reload i3 config
+        bindsym $mod+Shift+c reload
+
+    # reload i3
+        bindsym $mod+Shift+r restart
+
+    # Exit i3 
+        # bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+    # Move between windows
+        bindsym $mod+j focus left
+        bindsym $mod+k focus down
+        bindsym $mod+l focus up
+        bindsym $mod+semicolon focus right
+
+        # Alternatively, you can use the cursor keys:
+        bindsym $mod+Left focus left
+        bindsym $mod+Down focus down
+        bindsym $mod+Up focus up
+        bindsym $mod+Right focus right
+
+    # Move focused window
+        bindsym $mod+Shift+j move left
+        bindsym $mod+Shift+k move down
+        bindsym $mod+Shift+l move up
+        bindsym $mod+Shift+semicolon move right
+
+        # Alternatively, you can use the cursor keys:
+        bindsym $mod+Shift+Left move left
+        bindsym $mod+Shift+Down move down
+        bindsym $mod+Shift+Up move up
+        bindsym $mod+Shift+Right move right
+
+    # Name the workspaces
+        set $1 "1: Dimension I "
+        set $2 "2: Dimension II "
+        set $3 "3: Dimension III "
+        set $4 "4: Dimension IV "
+        set $5 "5: Dimension V "
+        set $6 "6: Dimension VI "
+
+    # Switch to workspace
+        bindsym $mod+1 workspace $1
+        bindsym $mod+2 workspace $2
+        bindsym $mod+3 workspace $3
+        bindsym $mod+4 workspace $4
+        bindsym $mod+5 workspace $5
+        bindsym $mod+6 workspace $6
+
+    # Move focused container to workspace
+        bindsym $mod+Shift+1 move container to workspace $1
+        bindsym $mod+Shift+2 move container to workspace $2
+        bindsym $mod+Shift+3 move container to workspace $3
+        bindsym $mod+Shift+4 move container to workspace $4
+        bindsym $mod+Shift+5 move container to workspace $5
+        bindsym $mod+Shift+6 move container to workspace $6
+
+    # Split direction
+        bindsym $mod+b splith
+        bindsym $mod+v splitv
+
+    # Make the current focused window fullscreen
+        bindsym $mod+f fullscreen
+
+    # Toggle focused window tiled/floating
+        bindsym $mod+space floating toggle
+
+    # Swap focus between the tiling area and the floating area
+        bindsym $mod+Shift+space focus mode_toggle
+
+    # Media keys
+        bindsym XF86AudioRaiseVolume exec pamixer -i 5 && $refresh_i3status
+        bindsym XF86AudioLowerVolume exec pamixer -d 5 && $refresh_i3status
+        bindsym XF86AudioMute exec pactl set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+        bindsym XF86AudioMicMute exec pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
+
+        bindsym XF86AudioPlay exec playerctl play-pause && $refresh_i3status
+        bindsym XF86AudioPrev exec playerctl playerctl previous && $refresh_i3status
+        bindsym XF86AudioNext exec playerctl playerctl next && $refresh_i3status
+
+    # Sreen brightness controls
+        bindsym XF86MonBrightnessDown exec brightnessctl s +1%
+        bindsym XF86MonBrightnessUp exec brightnessctl s 1%-
+
+    # Screenshot / share shortcuts
+        bindsym Print exec "scrot -F ~/Pictures/Screenshots/$(date -Iseconds | cut -d'+' -f1).png"
+        bindsym $mod+Print exec "scrot | xclip -selection clipboard -t image/png"
+
+#########  Resizing Containers #########
+
+    mode "resize" {
+            bindsym h resize shrink width 10 px or 10 ppt
+            bindsym j resize grow height 10 px or 10 ppt
+            bindsym k resize shrink height 10 px or 10 ppt
+            bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+            bindsym Left resize shrink width 10 px or 10 ppt
+            bindsym Down resize grow height 10 px or 10 ppt
+            bindsym Up resize shrink height 10 px or 10 ppt
+            bindsym Right resize grow width 10 px or 10 ppt
+
+        # easier than quitting vim
+            bindsym Return mode "default"
+            bindsym Escape mode "default"
+            bindsym $mod+r mode "default"
+    }
+    bindsym $mod+r mode "resize"
+
+
+#########   Window Properties  #########
+
+    # Enable float for some windows
+        for_window [class="^Dialog$"]       floating enable
+        for_window [class="^Transfer$"]     floating enable
+        for_window [title="Picture-in-picture"] floating enable
+
+        for_window [class="^Pavucontrol$"]  floating enable
+        for_window [class="^Galculator$"]  floating enable
+        for_window [class="^Lxappearance$"] floating enable
+        for_window [class="^Arandr$"]       floating enable
+        for_window [class="Task"]       floating enable
+
+    # Assign programs to workspace
+        # assign [class="brave"] → number 2
+        # assign [class="code"] →  $4
+        # assign [class="discord"] → number 5
+        # assign [class="Spotify"] → number 6
+        # assign [class="Audacity"] → number 6
+        # assign [class="Betterbird"] → number 8
+        # Some programs can be stubborn since they open a splash window before opening
+        # for_window [class="discord"] move to workspace number 5
+        # for_window [class="Spotify"] move to workspace number 6
+        # for_window [class="Gimp-2.10"] move to workspace number 7
+        # for_window [class="Gimp"] move to workspace number 7
+
+######### Output Configuration #########
+
+    # Wallpaper
+        exec --no-startup-id nitrogen --restore &
+
+    # Switch workspace to another monitor
+        # bindsym $mod+Shift+h move workspace to output left
+        # bindsym $mod+Shift+j move workspace to output down
+        # bindsym $mod+Shift+k move workspace to output up
+        # bindsym $mod+Shift+l move workspace to output right
+
+    #prev/next workspace. bind it to your mouse if you have a sticky keyboard
+        # bindsym $mod+Shift+o workspace prev_on_output
+        # bindsym $mod+Shift+p workspace next_on_output
+
+
+#########   Launch Programs  #########
+
+# start initial programs
+    # exec --no-startup-id brave &
+    # exec --no-startup-id spotify &
+    # exec --no-startup-id betterbird &
+
+# Applets
+    # exec --no-startup-id nm-applet &
+
+# keyboard delay
+    exec --no-startup-id xset r rate 200 25
+
+# notifications
+    exec --no-startup-id dunst &
+# auto tiling
+    exec --no-startup-id autotiling &
+
+# start compositor
+    exec --no-startup-id picom &
+
+# notify me
+    exec --no-startup-id notify-send "Welcome back $USER!"
+
+# Finally start polybar
+    # exec_always polybar
+
+# Start i3blocks to display a workspace bar
+    bar {
+        font pango: RobotoMono Nerd Font 12
+        i3bar_command i3bar --transparency
+        status_command i3blocks
+        height 30
+        output primary
+        position bottom
+        strip_workspace_numbers yes
+        tray_output nonprimary
+
+        colors {
+            background #00000000
+            statusline #F8F8F2
+            separator  #44475A
+
+            # focused_workspace  #44475A #44475A #F8F8F2
+            # active_workspace   #282A36 #44475A #F8F8F2
+            # inactive_workspace #282A36 #282A36 #BFBFBF
+            # urgent_workspace   #FF5555 #FF5555 #F8F8F2
+            # binding_mode       #FF5555 #FF5555 #F8F8F2
+
+            focused_workspace  #00000000 #00000000 #F8F8F2
+            active_workspace   #00000000 #00000000 #F8F8F2
+            inactive_workspace #00000000 #00000000 #BFBFBF
+            urgent_workspace   #FF5555 #FF5555 #F8F8F2
+            binding_mode       #FF5555 #FF5555 #F8F8F2
+        }
+    }

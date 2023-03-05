@@ -1,13 +1,11 @@
 ## EXPORT ###
 set fish_greeting                                 # Supresses fish's intro message
-set TERM 'xterm-256color'                         # Sets the terminal type
+set TERM 'xterm-256color'
 set EDITOR 'nvim'
 set VISUAL 'nvim'
 set -x MANPAGER 'sh -c "col -bx | bat -l man -p"'
-##set -x MANPAGER 'nvim -c 'set ft=man' -'
-
 export PATH="$HOME/.local/bin:$HOME/.local/bin/scripts:$PATH"
-
+fish_add_path /home/sumi/.spicetify
 
 # navigation
 alias ..='cd ..'
@@ -17,6 +15,8 @@ alias ...='cd ../..'
 alias vim='nvim'
 alias vi= 'nvim'
 alias cat="bat --style='plain,numbers,changes,header' --color always --theme TwoDark"
+alias node="export NODE_OPTIONS='--openssl-legacy-provider' && node"
+alias npm="export NODE_OPTIONS='--openssl-legacy-provider' && npm"
 
 # changing 'ls' to 'exa'
 alias ls='exa -a --color=always --group-directories-first --icons' # my preferred listing
@@ -30,8 +30,8 @@ alias q='exit'
 alias grep='grep --color=auto'
 
 # adding flags
-alias df='df -h'                          # human-readable sizes
-alias free='free -m'                      # show sizes in MB
+alias df='df -h'                          
+alias free='free -m'               
 alias f='nnn -oxHgeDdC'
 alias ncmpcpp='ncmpcpp ncmpcpp_directory=$HOME/.config/ncmpcpp/'
 
@@ -58,7 +58,7 @@ alias push='git push origin'
 alias tag='git tag'
 alias newtag='git tag -a'
 
-
+# kawasaki color scheme for prompt
 set theme_primary                                   1eb980
 set theme_secondary                                 ffcf44
 set theme_primary_variant                           045d56
@@ -87,4 +87,3 @@ set -g __fish_git_prompt_color_branch               $theme_secondary
 
 set -gx fish_prompt_pwd_dir_length                  1
 set -g theme_display_jobs_always                    yes
-fish_add_path /home/sumi/.spicetify

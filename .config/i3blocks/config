@@ -1,0 +1,87 @@
+# i3Block Config
+# Creater? sumi
+
+separator=false
+color=#f8f8f2
+markup=pango
+
+[title]
+command=xdotool getactivewindow getwindowname
+interval=4
+min_width=490
+color=#A6D1FA
+
+# [bookmarks]
+
+[music]
+full_text=""
+command=exec spotify
+
+[brave]
+full_text=""
+command=exec brave
+
+[term]
+full_text=""
+command=exec alacritty
+
+[files]
+full_text=""
+command=exec pcmanfm $HOME
+# [bookmarks]
+
+[media]
+command=playerctl metadata --format "{{ artist }} <span color=\"#bd93f9\">-</span> {{ title }}"
+interval=2
+label=<span color="#bd93f9"> </span>
+align=right
+
+# [weather]
+# command=curl -Ss 'https://wttr.in?0&T&Q' | cut -c 16- | head -2 | xargs echo
+# interval=3600
+# color=#A4C2F4
+
+[wifi]
+command=iwgetid -r
+instance=wlp11s0f3u1
+interval=5
+label=|<span color="#ff79c6">   </span>
+
+[volume]
+command=pamixer --get-volume | awk '{ printf "%i<span color=\"#bd93f9\">% </span>\n", $1 }'
+interval=1
+label=<span color="#bd93f9">   </span>
+
+[battery]
+interval=1
+command=cat /sys/class/power_supply/BAT1/capacity | awk '{ printf "%i<span color=\"#bd93f9\">% </span>\n", $1 }'
+interval=2
+label=<span color="#bd93f9">  </span>
+
+[brightness]
+interval=1
+command=brightnessctl g | awk '{ printf "%i<span color=\"#bd93f9\">%</span>\n", $1 }'
+interval=2
+label=<span color="#bd93f9">⭘ </span>
+
+[date]
+command=LC_ALL="en_US.UTF-8" date '+| %d, %A %b | %l:%m  '
+interval=60
+
+# [caps-lock]
+# command=xset -q | grep Caps | awk '{ print $2, $3, $4 }'
+# interval=once
+# signal=10
+
+# [restart]
+# full_text="⭘ "
+# command=systemctl reboot
+
+# [shutdown]
+# full_text=" "
+# command=systemctl poweroff
+
+# [arch_update]
+# command=checkupdates | wc -l
+# interval=once
+# label=<span color="#1793d1"> </span>
