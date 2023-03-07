@@ -4,8 +4,11 @@ set TERM 'xterm-256color'
 set EDITOR 'nvim'
 set VISUAL 'nvim'
 set -x MANPAGER 'sh -c "col -bx | bat -l man -p"'
-export PATH="$HOME/.local/bin:$HOME/.local/bin/scripts:$PATH"
-fish_add_path /home/sumi/.spicetify
+
+fish_add_path $HOME/.local/bin
+fish_add_path $HOME/Scripts
+fish_add_path $HOME/Apps
+fish_add_path $HOME/.spicetify
 
 # navigation
 alias ..='cd ..'
@@ -15,8 +18,9 @@ alias ...='cd ../..'
 alias vim='nvim'
 alias vi= 'nvim'
 alias cat="bat --style='plain,numbers,changes,header' --color always --theme TwoDark"
-alias node="export NODE_OPTIONS='--openssl-legacy-provider' && node"
-alias npm="export NODE_OPTIONS='--openssl-legacy-provider' && npm"
+
+#alias npm="export NODE_OPTIONS='--openssl-legacy-provider' && npm"
+#alias node="export NODE_OPTIONS='--openssl-legacy-provider' && node"
 
 # changing 'ls' to 'exa'
 alias ls='exa -a --color=always --group-directories-first --icons' # my preferred listing

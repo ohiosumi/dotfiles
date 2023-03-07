@@ -8,10 +8,10 @@ window:
   #decorations: full
   #startup_mode: Windowed
   padding:
-    x: 10
+    x: 8
     y: 8
   dynamic_padding: false
-  opacity: 1
+  opacity: 0.99
  
   title: Terminal
   class:

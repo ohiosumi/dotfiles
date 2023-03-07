@@ -1,5 +1,5 @@
-!--  Xcursor.theme: macOS-Monterey-White -- !
-Xcursor.size: 40
+Xcursor.theme: macOS-Monterey-White
+Xcursor.size: 24
 
 !-- Xft settings -- !
 Xft.antialias:	1
