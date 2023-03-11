@@ -35,5 +35,5 @@ SETUVAR fish_pager_color_description:B3A06D\x1eyellow\x1e\x2di
 SETUVAR fish_pager_color_prefix:normal\x1e\x2d\x2dbold\x1e\x2d\x2dunderline
 SETUVAR fish_pager_color_progress:brwhite\x1e\x2d\x2dbackground\x3dcyan
 SETUVAR fish_pager_color_selected_background:\x2dr
-SETUVAR fish_user_paths:/home/sumi/\x2espicetify\x1e/home/sumi/\x2eyarn/bin
+SETUVAR fish_user_paths:/home/sumi/Apps/Discord\x1e/home/sumi/Apps/Installers\x1e/home/sumi/Apps/Roms\x1e/home/sumi/Scripts/asciiart\x1e/home/sumi/Apps\x1e/home/sumi/Scripts\x1e/home/sumi/\x2elocal/bin\x1e/home/sumi/\x2espicetify\x1e/home/sumi/\x2eyarn/bin
 SETUVAR pisces_pairs:\x28\x2c\x29\x1e\x5b\x2c\x5d\x1e\x7b\x2c\x7d\x1e\x22\x2c\x22\x1e\x27\x2c\x27

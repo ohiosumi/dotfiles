@@ -1,6 +1,11 @@
 -- Configure the appearance
 
-local colorscheme = "base16-atelier-heath"
+require("gruvbox").setup({
+  contrast = "hard", -- can be "hard", "soft" or empty string
+  dim_inactive = true,
+  transparent_mode = false,
+})
+local colorscheme = "gruvbox"
 
 local is_color_valid, _ = pcall(vim.cmd, "colorscheme " .. colorscheme)
 if not is_color_valid then

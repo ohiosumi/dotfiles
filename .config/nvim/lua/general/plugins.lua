@@ -15,7 +15,7 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
 
  -- colorschemes
-    'RRethy/nvim-base16',
+    'ellisonleao/gruvbox.nvim',
     'xiyaowong/nvim-transparent',
 
  -- utility
@@ -30,7 +30,7 @@ require("lazy").setup({
     'nvim-treesitter/nvim-treesitter',
     'norcalli/nvim-colorizer.lua',
     'nvim-tree/nvim-web-devicons',
-    'lukas-reineke/indent-blankline.nvim',
+--    'lukas-reineke/indent-blankline.nvim',
     'karb94/neoscroll.nvim',
     'xiyaowong/nvim-cursorword',
     'windwp/nvim-autopairs',

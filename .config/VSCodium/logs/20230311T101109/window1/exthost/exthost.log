@@ -1,0 +1,21 @@
+2023-03-11 10:11:12.505 [info] Extension host with pid 10758 started
+2023-03-11 10:11:12.505 [info] Skipping acquiring lock for /home/sumi/.config/VSCodium/User/workspaceStorage/fa41e2534f8eb5db366011e66b5ad73a.
+2023-03-11 10:11:12.650 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-11 10:11:12.651 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-11 10:11:12.653 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2023-03-11 10:11:12.654 [info] ExtensionService#_doActivateExtension naumovs.color-highlight, startup: true, activationEvent: '*'
+2023-03-11 10:11:12.654 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2023-03-11 10:11:12.924 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-11 10:11:12.926 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-11 10:11:13.198 [info] Eager extensions activated
+2023-03-11 10:11:13.217 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 10:11:13.218 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 10:11:13.219 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 10:11:13.220 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 10:11:13.222 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'
+2023-03-11 10:13:21.520 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2023-03-11 10:13:21.521 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2023-03-11 10:13:21.522 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2023-03-11 10:13:22.244 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:jsonc'
+2023-03-11 10:15:18.261 [info] Extension host terminating: received terminate message from renderer
+2023-03-11 10:15:18.292 [info] Extension host with pid 10758 exiting with code 0

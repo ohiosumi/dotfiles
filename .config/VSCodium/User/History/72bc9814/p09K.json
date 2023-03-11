@@ -1,0 +1,9 @@
+{
+    "workbench.colorTheme": "Gruvbox Material Dark",
+    "workbench.iconTheme": "material-icon-theme",
+    "window.zoomLevel": 2,
+    "files.autoSave": "onFocusChange",
+    "editor.fontSize": 18,
+    "editor.fontFamily": "'JetBrains Nerd Font', 'monospace', monospace",
+    "editor.renderWhitespace": "none"
+}

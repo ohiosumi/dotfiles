@@ -1,0 +1,16 @@
+2023-03-08 20:35:28.918 [info] update#setState idle
+2023-03-08 20:35:31.114 [info] Starting extension host with pid 13874 (fork() took 56 ms).
+2023-03-08 20:35:58.921 [info] update#setState checking for updates
+2023-03-08 20:36:02.087 [error] update#isLatestVersion(): failed to check for updates
+2023-03-08 20:36:02.088 [error] Error: net::ERR_TIMED_OUT
+    at SimpleURLLoaderWrapper.<anonymous> (node:electron/js2c/browser_init:101:7169)
+    at SimpleURLLoaderWrapper.emit (node:events:526:28)
+2023-03-08 20:36:09.997 [info] update#setState idle
+2023-03-08 20:50:26.047 [info] Extension host with pid 13874 exited with code: 0, signal: null.
+2023-03-08 20:50:27.985 [info] Starting extension host with pid 18823 (fork() took 23 ms).
+2023-03-08 21:35:58.926 [info] update#setState checking for updates
+2023-03-08 21:36:05.770 [info] update#setState idle
+2023-03-08 22:12:42.704 [info] Extension host with pid 18823 exited with code: 0, signal: null.
+2023-03-08 22:12:44.641 [info] Starting extension host with pid 49445 (fork() took 24 ms).
+2023-03-08 22:18:41.013 [info] Waiting for extension host with pid 49445 to exit.
+2023-03-08 22:18:41.021 [info] Extension host with pid 49445 exited with code: 0, signal: null.

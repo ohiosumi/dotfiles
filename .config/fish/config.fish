@@ -7,9 +7,10 @@ set -x MANPAGER 'sh -c "col -bx | bat -l man -p"'
 
 fish_add_path $HOME/.local/bin
 fish_add_path $HOME/Scripts
+fish_add_path $HOME/Scripts/asciiart
 fish_add_path $HOME/Apps
+fish_add_path $HOME/Apps/*
 fish_add_path $HOME/.spicetify
-
 # navigation
 alias ..='cd ..'
 alias ...='cd ../..'
@@ -17,10 +18,7 @@ alias ...='cd ../..'
 # nvim
 alias vim='nvim'
 alias vi= 'nvim'
-alias cat="bat --style='plain,numbers,changes,header' --color always --theme TwoDark"
-
-#alias npm="export NODE_OPTIONS='--openssl-legacy-provider' && npm"
-#alias node="export NODE_OPTIONS='--openssl-legacy-provider' && node"
+alias cat="bat --style='plain,numbers,changes,header' --color always --theme gruvbox-dark"
 
 # changing 'ls' to 'exa'
 alias ls='exa -a --color=always --group-directories-first --icons' # my preferred listing
@@ -89,5 +87,8 @@ set -g __fish_git_prompt_color_branch_begin         brblack
 set -g __fish_git_prompt_color_branch_end           brblack
 set -g __fish_git_prompt_color_branch               $theme_secondary
 
-set -gx fish_prompt_pwd_dir_length                  1
+set -gx fish_prompt_pwd_dir_length                  30
 set -g theme_display_jobs_always                    yes
+
+bash ~/.profile
+fish_add_path /home/sumi/.spicetify

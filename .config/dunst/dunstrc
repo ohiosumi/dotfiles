@@ -3,7 +3,7 @@
     follow = none
     width = 300
     height = 300
-    origin = top-right
+    origin = top-center
     offset = 10x35
     scale = 0
     notification_limit = 0
@@ -27,7 +27,7 @@
     line_height = 5 
     markup = full
     format = "<b>%s</b>\n%b"
-    alignment = right
+    alignment = center
     vertical_alignment = center
     show_age_threshold = 60
     ellipsize = middle

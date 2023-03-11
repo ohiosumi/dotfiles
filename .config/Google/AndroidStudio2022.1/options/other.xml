@@ -1,0 +1,70 @@
+<application>
+  <component name="DynamicPluginEnabler">
+    <trackers>
+      <map>
+        <entry key="2MhmFaSkODVxklrnhmc60IfQOTu">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+        <entry key="Default (Template) Project">
+          <value>
+            <ProjectPluginTracker />
+          </value>
+        </entry>
+      </map>
+    </trackers>
+  </component>
+  <component name="PropertyService"><![CDATA[{
+  "keyToString": {
+    "AndroidInitConfigurator.V1": "true",
+    "AndroidInitConfigurator.V3": "true",
+    "AndroidInitConfigurator.V5": "true",
+    "InstalledPluginsSearchHistory": "kotli\nkotlin\nkotl\nkot\nko",
+    "MarketplacePluginsSearchHistory": "/tag:theme",
+    "MobileminApi": "30",
+    "NonModalCommitCustomization.IsApplied": "true",
+    "RunOnceActivity.cidr.test.framework.showIndexingAsTask": "true",
+    "RunOnceActivity.se.text.search": "true",
+    "SAVED_ANDROID_NPW_ASKED_LANGUAGE": "true",
+    "SAVED_ANDROID_NPW_LANGUAGE": "Kotlin",
+    "SAVED_ANDROID_PACKAGE": "com.example",
+    "Source Code Editor With PreviewLayout": "Editor only",
+    "android.sdk.path": "/home/sumi/Android/Sdk",
+    "appcds.runOnSecondStart": "AI-221.6008.13.2211.9619390-8e98033a3938dd9c58e4f0dfc310150098bf7530e52ad1ce149840393328762f",
+    "ask.about.ctrl.y.shortcut.v2": "true",
+    "build.toolwindow.Build Output.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "build.toolwindow.Sync.selection.state": "com.intellij.build.BuildTreeConsoleView",
+    "bundled.plugins.list.saved.version": "AI-221.6008.13.2211.9619390",
+    "file.gist.reindex.count": "55",
+    "fileTypeChangedCounter": "1",
+    "input.method.disabler.muted": "true",
+    "installed.kotlin.plugin.version": "221-1.8.0-release-for-android-studio-AS5591.52",
+    "kotlin.lastUpdateCheck": "1678227958740",
+    "last_opened_file_path": "/home/sumi",
+    "newly.installed.api.level": "33",
+    "registry.to.advanced.settings.migration.build": "AI-221.6008.13.2211.9619390",
+    "tasks.pass.word.conversion.enforced": "true"
+  },
+  "keyToStringList": {
+    "file.chooser.recent.files": [
+      "/home/sumi"
+    ],
+    "fileTypeDetectors": [
+      "com.intellij.ide.scratch.ScratchFileServiceImpl$Detector",
+      "com.jetbrains.cidr.lang.OCHeaderFileTypeDetector",
+      "com.android.tools.idea.sqlite.fileType.SqliteFileTypeDetector",
+      "com.android.tools.idea.profilers.capture.MemoryCaptureFileType$Detector",
+      "org.jetbrains.plugins.textmate.TextMateFileType$TextMateFileDetector"
+    ],
+    "kotlin-gradle-user-dirs": [
+      "/home/sumi/.gradle"
+    ]
+  }
+}]]></component>
+  <component name="TerminalCommandHistoryManager">
+    <command-history-files>
+      <command-history-file filename="My Application-history" project-path="$USER_HOME$/AndroidStudioProjects/MyApplication" last-access-time="1678228699556" />
+    </command-history-files>
+  </component>
+</application>

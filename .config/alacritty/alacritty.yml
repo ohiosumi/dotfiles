@@ -5,8 +5,8 @@ env:
   TERM: xterm-256color
 
 window:
-  #decorations: full
-  #startup_mode: Windowed
+  decorations: none
+  startup_mode: Windowed
   padding:
     x: 8
     y: 8
@@ -42,35 +42,34 @@ font:
   draw_bold_text_with_bright_colors: true
 
 schemes:
-  MonokaiPro: &MonokaiPro
-    # Default colors
+  Gruvbox: &Gruvbox
     primary:
-      background: '#000009'
-      foreground: '#FCFCFA'
+      background: '#1d2021'
+      foreground: '#ebdbb2'
 
     # Normal colors
     normal:
-      black:   '#403E41'
-      red:     '#FF6188'
-      green:   '#A9DC76'
-      yellow:  '#FFD866'
-      blue:    '#FC9867'
-      magenta: '#AB9DF2'
-      cyan:    '#78DCE8'
-      white:   '#FCFCFA'
+      black:   '#282828'
+      red:     '#cc241d'
+      green:   '#98971a'
+      yellow:  '#d79921'
+      blue:    '#458588'
+      magenta: '#b16286'
+      cyan:    '#689d6a'
+      white:   '#a89984'
 
     # Bright colors
     bright:
-      black:   '#727072'
-      red:     '#FF6188'
-      green:   '#A9DC76'
-      yellow:  '#FFD866'
-      blue:    '#FC9867'
-      magenta: '#AB9DF2'
-      cyan:    '#78DCE8'
-      white:   '#FCFCFA'
+      black:   '#928374'
+      red:     '#fb4934'
+      green:   '#b8bb26'
+      yellow:  '#fabd2f'
+      blue:    '#83a598'
+      magenta: '#d3869b'
+      cyan:    '#8ec07c'
+      white:   '#ebdbb2'
 
-colors: *MonokaiPro
+colors: *Gruvbox
 
 cursor:
   style: Beam
@@ -85,6 +84,7 @@ mouse:
 
 mouse_bindings:
   - { mouse: Right, action: PasteSelection }
+  - { mouse: Middle, action: none }
 
 key_bindings:
   - { key: V,         mods: Control|Shift, action: Paste                       }

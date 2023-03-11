@@ -1,0 +1,71 @@
+##### Defaults #####
+color=#ebdbb2
+markup=pango
+align=center
+separator=true
+full_text=〉
+##### Defaults #####
+
+##### Blocklets #####
+[title]
+color=#b8bb26
+interval=1
+command=xdotool getactivewindow getwindowname
+[separator]
+[media]
+interval=60
+label=<span color="#fabd2f"></span>
+command=playerctl metadata --format " <span color=\"#8ec07c\"> {{ title }}</span> <span color=\"#689d6a\">- {{ artist }}</span> "
+[separator]
+[wifi]
+interval=once
+instance=wlp11s0f3u1
+command=iwgetid -r
+[separator]
+[volume]
+interval=1
+command=pamixer --get-volume | awk '{ printf "%i<span color=\"#b16286\">%</span>\n", $1 }'
+[separator]
+[battery]
+interval=60
+command=cat /sys/class/power_supply/BAT1/capacity | awk '{ printf "%i<span color=\"#bd93f9\">%</span>\n", $1 }'
+[separator]
+[brightness]
+interval=once
+command=brightnessctl g | awk '{ printf "%i<span color=\"#b16286\">%</span>\n", $1 }'
+[separator]
+[date]
+interval=60
+command=date '+| %d, %A %b | %l:%M  '
+[separator]
+[run]
+full_text=Run
+width=60
+command=rofi -show drun >/dev/null
+[separator]
+[clip]
+full_text=Clip
+width=60
+command=
+[separator]
+[screenshot]
+full_text=Capture
+width=60
+command=scrot
+[separator]
+[sleep]
+full_text=Sleep
+width=60
+command=notify-send 'Sleeping' && systemctl sleep
+[separator]
+[reboot]
+full_text=Reboot
+width=60
+command=notify-send 'Rebooting the Desktop' && systemctl reboot
+[separator]
+[power]
+full_text=Shut
+Twidth=60
+command=notify-send 'Turning Off the Desktop' && systemctl poweroff
+
+##### Blocklets #####

@@ -1,0 +1,28 @@
+2023-03-09 18:35:46.519 [info] Added views:workbench.panel.markers.view in workbench.panel.markers
+2023-03-09 18:35:46.519 [info] Added views:workbench.panel.output in workbench.panel.output
+2023-03-09 18:35:46.519 [info] Added views:terminal in terminal
+2023-03-09 18:35:46.519 [info] Added views:outline in workbench.view.explorer
+2023-03-09 18:35:46.519 [info] Added views:workbench.scm in workbench.view.scm
+2023-03-09 18:35:46.519 [info] Added views:workbench.view.search in workbench.view.search
+2023-03-09 18:35:46.519 [info] Added views:timeline in workbench.view.explorer
+2023-03-09 18:35:46.519 [info] Added views:workbench.explorer.fileView in workbench.view.explorer
+2023-03-09 18:35:47.227 [info] Added views:workbench.debug.variablesView,workbench.debug.watchExpressionsView,workbench.debug.callStackView,workbench.debug.breakPointsView in workbench.view.debug
+2023-03-09 18:35:47.546 [info] Added views:workbench.panel.repl.view in workbench.panel.repl
+2023-03-09 18:35:47.551 [info] Removed views:workbench.debug.breakPointsView,workbench.debug.callStackView,workbench.debug.watchExpressionsView,workbench.debug.variablesView from workbench.view.debug
+2023-03-09 18:35:47.554 [info] Added views:workbench.debug.welcome in workbench.view.debug
+2023-03-09 18:40:27.546 [info] Removed views:timeline from workbench.view.explorer
+2023-03-09 18:40:29.418 [info] Removed views:outline from workbench.view.explorer
+2023-03-09 18:40:34.446 [info] Showing view outline in the container workbench.view.explorer
+2023-03-09 18:40:34.447 [info] Added views:outline in workbench.view.explorer
+2023-03-09 18:40:37.064 [info] Showing view workbench.explorer.openEditorsView in the container workbench.view.explorer
+2023-03-09 18:40:37.065 [info] Added views:workbench.explorer.openEditorsView in workbench.view.explorer
+2023-03-09 18:40:38.344 [info] Removed views:workbench.explorer.openEditorsView from workbench.view.explorer
+2023-03-09 18:40:40.302 [info] Removed views:outline from workbench.view.explorer
+2023-03-09 18:41:06.835 [info] Added views:workbench.views.extensions.installed,workbench.views.extensions.popular,extensions.recommendedList in workbench.view.extensions
+2023-03-09 18:41:06.840 [info] Removed views:workbench.views.extensions.popular from workbench.view.extensions
+2023-03-09 18:41:10.024 [info] Removed views:extensions.recommendedList,workbench.views.extensions.installed from workbench.view.extensions
+2023-03-09 18:41:10.051 [info] Added views:workbench.views.extensions.marketplace in workbench.view.extensions
+2023-03-09 18:41:11.793 [info] Removed views:workbench.views.extensions.marketplace from workbench.view.extensions
+2023-03-09 18:41:11.804 [info] Added views:workbench.views.extensions.installed,extensions.recommendedList in workbench.view.extensions
+2023-03-09 18:41:13.741 [info] Removed views:extensions.recommendedList,workbench.views.extensions.installed from workbench.view.extensions
+2023-03-09 18:41:13.767 [info] Added views:workbench.views.extensions.marketplace in workbench.view.extensions

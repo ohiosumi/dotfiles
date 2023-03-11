@@ -1,0 +1,442 @@
+{
+   "checksum": "7eb609734aebfd3602f49fe8eadae254",
+   "roots": {
+      "bookmark_bar": {
+         "children": [ {
+            "date_added": "13322694756656099",
+            "date_last_used": "13322981507972866",
+            "guid": "a42d80fc-813b-4d08-a946-6899a47caafe",
+            "id": "10",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "YouTube",
+            "type": "url",
+            "url": "https://www.youtube.com/"
+         }, {
+            "date_added": "13323013580571171",
+            "date_last_used": "0",
+            "guid": "569b94ca-dece-4b67-9184-610ae38e4dd0",
+            "id": "61",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Discord",
+            "type": "url",
+            "url": "https://discord.com/app"
+         }, {
+            "date_added": "13322852262226946",
+            "date_last_used": "13322903829903170",
+            "guid": "d3fabf40-92ab-49ea-b84b-4e85ebce247f",
+            "id": "49",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Lofi Radio",
+            "type": "url",
+            "url": "https://www.lofi.cafe/"
+         }, {
+            "date_added": "13322695443965021",
+            "date_last_used": "13322982596171234",
+            "guid": "4ba815fd-df8c-4c00-8a5e-33d00bd580fb",
+            "id": "12",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Github",
+            "type": "url",
+            "url": "https://github.com/"
+         }, {
+            "date_added": "13322722985174099",
+            "date_last_used": "13323013987782761",
+            "guid": "8524de99-d12a-46ae-b933-e69c88f3c12a",
+            "id": "22",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Arch",
+            "type": "url",
+            "url": "https://wiki.archlinux.org/"
+         }, {
+            "date_added": "13322744942494933",
+            "date_last_used": "0",
+            "guid": "f9ecdf23-b734-465c-8b59-55d889b44cbb",
+            "id": "37",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "ChatGPT",
+            "type": "url",
+            "url": "https://chat.openai.com/chat/3609493c-4df3-43f6-9a90-09c83e31a8bb"
+         }, {
+            "children": [ {
+               "date_added": "13322722909897773",
+               "date_last_used": "13322985366851494",
+               "guid": "1f02ee12-8895-48fe-8c4f-6d1c044018c1",
+               "id": "16",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "MangaReader",
+               "type": "url",
+               "url": "https://mangareader.to/home"
+            }, {
+               "date_added": "13322722936048638",
+               "date_last_used": "0",
+               "guid": "be5f1492-b913-41a8-9ab5-207daa9fbb61",
+               "id": "18",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Kayoanime",
+               "type": "url",
+               "url": "https://kayoanime.com/"
+            }, {
+               "date_added": "13322722942097588",
+               "date_last_used": "0",
+               "guid": "3e113267-7474-4470-854c-470eb9c23a83",
+               "id": "19",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "AnimeKaizoku ",
+               "type": "url",
+               "url": "https://animekaizoku.com/"
+            }, {
+               "date_added": "13322722948445349",
+               "date_last_used": "0",
+               "guid": "a62241c6-9da1-48cb-9ff9-b68bbd8e2691",
+               "id": "20",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "My Anime List",
+               "type": "url",
+               "url": "https://myanimelist.net/"
+            } ],
+            "date_added": "13322722927833935",
+            "date_last_used": "0",
+            "date_modified": "13322731205347912",
+            "guid": "d3f0decd-d31a-4109-9c64-177bb8cc888a",
+            "id": "17",
+            "name": "Anime",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13322746161619306",
+               "date_last_used": "0",
+               "guid": "a6e75450-cda7-4b3f-b352-d551ac0b4937",
+               "id": "38",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "BootSplash",
+               "type": "url",
+               "url": "https://wiki.archlinux.org/title/Fbsplash"
+            }, {
+               "date_added": "13322810605231600",
+               "date_last_used": "0",
+               "guid": "936773bb-a997-42de-846f-67b5f7908717",
+               "id": "43",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "JoseExposito/touchegg: Linux multi-touch gesture recognizer",
+               "type": "url",
+               "url": "https://github.com/JoseExposito/touchegg#arch-linux-manjaro-and-derivatives"
+            }, {
+               "date_added": "13322837224459381",
+               "date_last_used": "0",
+               "guid": "c2d83467-c611-4a3b-ac64-b74d7bcbba64",
+               "id": "45",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "sigoden/aichat: A powerful ChatGPT command line tool that allows easy chat with ChatGPT-3.5 in a terminal.",
+               "type": "url",
+               "url": "https://github.com/sigoden/aichat"
+            }, {
+               "date_added": "13322837299101775",
+               "date_last_used": "0",
+               "guid": "d5426755-2c1b-481f-beb6-4335ebb1f62a",
+               "id": "46",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "zellij-org/zellij: A terminal workspace with batteries included",
+               "type": "url",
+               "url": "https://github.com/zellij-org/zellij"
+            }, {
+               "date_added": "13322850515480720",
+               "date_last_used": "0",
+               "guid": "475d1d57-d6b2-482c-bdf3-65b9f551b562",
+               "id": "48",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Email in the Terminal: Configuring Neomutt :: Gideon Wolfe",
+               "type": "url",
+               "url": "https://gideonwolfe.com/posts/workflow/neomutt/intro/"
+            }, {
+               "date_added": "13322878192691403",
+               "date_last_used": "0",
+               "guid": "7f99c3a1-8077-4820-9ad9-1baed6d5a131",
+               "id": "53",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "carnager/clerk: clerk - mpd client, based on rofi/fzf",
+               "type": "url",
+               "url": "https://github.com/carnager/clerk"
+            } ],
+            "date_added": "13322746215469354",
+            "date_last_used": "0",
+            "date_modified": "13322878328321152",
+            "guid": "df044dd0-6d49-4439-81db-01f8bd625c41",
+            "id": "39",
+            "name": "Patches",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13322693678281028",
+               "date_last_used": "0",
+               "guid": "3a6b4a8a-bd2b-486a-b724-7701e4df53ad",
+               "id": "7",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "GitHub - juminai/bspdots",
+               "type": "url",
+               "url": "https://github.com/juminai/bspdots"
+            }, {
+               "date_added": "13322693702066509",
+               "date_last_used": "0",
+               "guid": "dc060714-521d-49e9-8052-25f4b6963a58",
+               "id": "9",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "GitHub - sachnr/awesomewm-dotfiles: awesomewm dotfiles",
+               "type": "url",
+               "url": "https://github.com/sachnr/awesomewm-dotfiles"
+            }, {
+               "date_added": "13322695363970888",
+               "date_last_used": "0",
+               "guid": "26b14b95-b6db-4b1a-a8d6-d56ad45918f0",
+               "id": "11",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "GitHub - BlackCapCoder/compton: A compositor for X11.",
+               "type": "url",
+               "url": "https://github.com/BlackCapCoder/compton"
+            }, {
+               "date_added": "13322878328321152",
+               "date_last_used": "0",
+               "guid": "da9a7fef-a195-4dd5-adf9-15787c77745c",
+               "id": "54",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "[dwm] few improvements on my rice... removed gaps for efficiency, moved from ncmpcpp to cava as a visualizer and created a minimal version of my Neovim config : unixporn",
+               "type": "url",
+               "url": "https://www.reddit.com/r/unixporn/comments/vjdqkx/dwm_few_improvements_on_my_rice_removed_gaps_for/"
+            }, {
+               "date_added": "13322878334387300",
+               "date_last_used": "0",
+               "guid": "a0ce8e1a-721c-43ed-a559-9e3b1d74ea9e",
+               "id": "55",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "| Ncmpcpp help. : unixporn",
+               "type": "url",
+               "url": "https://www.reddit.com/r/unixporn/comments/uic2om/ncmpcpp_help/"
+            }, {
+               "date_added": "13322907237716181",
+               "date_last_used": "13322934107271464",
+               "guid": "92e0d823-9c29-4383-bd26-ee267ea6eb7b",
+               "id": "57",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Zoro",
+               "type": "url",
+               "url": "https://zoro.to/home"
+            } ],
+            "date_added": "13322693697768789",
+            "date_last_used": "0",
+            "date_modified": "13322907237716181",
+            "guid": "8c0fb20a-3b1c-4f8d-a05e-d3e397dce8b8",
+            "id": "8",
+            "name": "UnixPorn",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13322731205347912",
+               "date_last_used": "0",
+               "guid": "f36fae3e-2cd3-4699-838f-9c88cd09017d",
+               "id": "27",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Emulation",
+               "type": "url",
+               "url": "https://emulation.gametechwiki.com/index.php/Main_Page"
+            }, {
+               "date_added": "13322731247364559",
+               "date_last_used": "13322871648138412",
+               "guid": "5c0c6765-69ba-4d48-9828-e611d6e199d1",
+               "id": "29",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Batocera.linux",
+               "type": "url",
+               "url": "https://batocera.org/download"
+            }, {
+               "date_added": "13322731832034304",
+               "date_last_used": "0",
+               "guid": "d4d41ec8-d4b6-472a-b2e0-a234f25b5c4f",
+               "id": "30",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "WII ROMs FREE | Nintendo Wii Games | ROMs Games",
+               "type": "url",
+               "url": "https://www.romsgames.net/roms/nintendo-wii/"
+            }, {
+               "date_added": "13322731837111039",
+               "date_last_used": "0",
+               "guid": "f107fb4a-33fe-4103-a4d4-cf15aab647f2",
+               "id": "31",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "PES 2013: Pro Evolution Soccer ROM | WII Game | Download ROMs",
+               "type": "url",
+               "url": "https://www.romsgames.net/nintendo-wii-rom-pes-2013-pro-evolution-soccer/"
+            }, {
+               "date_added": "13322731839051772",
+               "date_last_used": "0",
+               "guid": "45651e22-c7f6-409c-b4a3-603ee8015a36",
+               "id": "32",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Starting Download of New Super Mario Bros. Wii (USA) (En,Fr,Es) (Rev 2).7z",
+               "type": "url",
+               "url": "https://www.romsgames.net/download/nintendo-wii-rom-new-super-mario-bros-wii/"
+            }, {
+               "date_added": "13322731842214579",
+               "date_last_used": "0",
+               "guid": "253eb2b1-0a2c-4314-aed6-9dd5b5f1953d",
+               "id": "33",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "11 Best Pokemon Games for Nintendo Switch",
+               "type": "url",
+               "url": "https://retrododo.com/pokemon-games-for-nintendo-switch/"
+            }, {
+               "date_added": "13322731843322892",
+               "date_last_used": "0",
+               "guid": "6148f142-3ae5-4045-8c03-a6acf47b479f",
+               "id": "34",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "10 Best Anime Games On PS3",
+               "type": "url",
+               "url": "https://retrododo.com/anime-games-on-ps3/"
+            } ],
+            "date_added": "13322731222648829",
+            "date_last_used": "0",
+            "date_modified": "13322746161619306",
+            "guid": "b2684558-4298-40fd-9268-61a76a510017",
+            "id": "28",
+            "name": "Emulation",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13322723002157717",
+               "date_last_used": "13322977892983421",
+               "guid": "8c5ba60d-26e0-4ace-8b31-76340acebe43",
+               "id": "23",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "Pinterest",
+               "type": "url",
+               "url": "https://www.pinterest.com/"
+            } ],
+            "date_added": "13322907335391243",
+            "date_last_used": "0",
+            "date_modified": "13322907338391525",
+            "guid": "18979db3-0070-4eca-9dc7-ee4b4e2a51dd",
+            "id": "58",
+            "name": "Social",
+            "type": "folder"
+         }, {
+            "children": [ {
+               "date_added": "13322730472737333",
+               "date_last_used": "0",
+               "guid": "445fc7bb-7692-4949-929f-6e7d0d9b34ea",
+               "id": "25",
+               "meta_info": {
+                  "power_bookmark_meta": ""
+               },
+               "name": "DeviantArt",
+               "type": "url",
+               "url": "https://www.deviantart.com/"
+            } ],
+            "date_added": "13322907349762273",
+            "date_last_used": "0",
+            "date_modified": "13322907353443036",
+            "guid": "94d8fc9c-7ece-41ed-babb-b91c789a2613",
+            "id": "59",
+            "name": "Pictures",
+            "type": "folder"
+         }, {
+            "date_added": "13322758839197835",
+            "date_last_used": "13322977480296274",
+            "guid": "ee090718-d166-499b-a22d-02d8d28da39e",
+            "id": "41",
+            "meta_info": {
+               "power_bookmark_meta": ""
+            },
+            "name": "Chess",
+            "type": "url",
+            "url": "https://lichess.org/"
+         } ],
+         "date_added": "13322692734358156",
+         "date_last_used": "0",
+         "date_modified": "13323013587173317",
+         "guid": "0bc5d13f-2cba-5d74-951f-3f233fe6c908",
+         "id": "1",
+         "name": "Bookmarks",
+         "type": "folder"
+      },
+      "other": {
+         "children": [  ],
+         "date_added": "13322692734358163",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "82b081ec-3dd3-529c-8475-ab6c344590dd",
+         "id": "2",
+         "name": "Other bookmarks",
+         "type": "folder"
+      },
+      "synced": {
+         "children": [  ],
+         "date_added": "13322692734358164",
+         "date_last_used": "0",
+         "date_modified": "0",
+         "guid": "4cf2e351-0e85-532b-bb37-df045d8f8d0f",
+         "id": "3",
+         "name": "Mobile bookmarks",
+         "type": "folder"
+      }
+   },
+   "version": 1
+}

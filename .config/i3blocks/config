@@ -1,52 +1,93 @@
 ##### Defaults #####
-separator=false
-color=#f8f8f2
+color=#ebdbb2
 markup=pango
+align=center
+separator=false
+full_text=|
 ##### Defaults #####
 
 ##### Blocklets #####
 
-#[title]
+#[window]
+#color=#b8bb26
+#interval=1
 #command=xdotool getactivewindow getwindowname
-#interval=4
-#min_width=490
-#color=#A6D1FA
+#full_text=
 
-[media]
-command=playerctl metadata --format " <span color=\"#C5E384\"> {{ title }}</span> <span color=\"#00A693\">- {{ artist }}</span> "
-interval=10
-min-width=1920
-label=<span color="#00CC99"></span>
-align=center
+[separator]
 
-[wifi]
-command=iwgetid -r
-instance=wlp11s0f3u1
-interval=60
+[run]
+full_text=󰣘 
+width=60
+command=cd ~/ && rofi -show drun >/dev/null
 
-[volume-dec]
-command=pamixer -d 5 && $refresh_i3status
-full-text="󰒮"
+[brave]
+full_text= 
+width=60
+command=brave
+
+[spotify]
+full_text= 
+width=60
+command=spotify
+
+
+[files]
+full_text= 
+width=60
+command=pcmanfm ~/
+
+[downloads]
+full_text=󰉍 
+width=60
+command=pcmanfm ~/Downloads
 
 [volume]
-command=pamixer --get-volume | awk '{ printf "%i<span color=\"#bd93f9\">%</span>\n", $1 }'
-interval=1
-click_middle=set-sink-mute @DEFAULT_SINK@ toggle && $refresh_i3status
+full_text=󰕾 
+width=60
+command=pavucontrol
 
-[volume-inc]
-command=pamixer -i 5 && $refresh_i3status
-full-text="󰒭"
+[yellowishness]
+full_text= 
+width=60
+command=redshift -O 5500K >/dev/null
+
+[screenshot]
+full_text=󰹑 
+width=60
+command=exec scrot -s -d 2 ~/Pictures/Screenshots/$(date).png
+
+[blueishness]
+full_text=󱉵
+width=60
+command=redshift -x >/dev/null
+
+[separator]
 
 [battery]
-command=cat /sys/class/power_supply/BAT1/capacity | awk '{ printf "%i<span color=\"#bd93f9\">%</span>\n", $1 }'
-interval=2
+interval=60
+command=cat /sys/class/power_supply/BAT1/capacity | awk '{ printf "%i<span color=\"#fabd2f\"></span>\n", $1 }'
 
-[brightness]
-interval=10
-command=brightnessctl g | awk '{ printf "%i<span color=\"#bd93f9\">%</span>\n", $1 }'
+[separator]
 
 [date]
-command=date '+| %d, %A %b | %l:%M  '
 interval=60
+command=date '+%A, %d %b %l:%M'
+[separator]
+
+[sleep]
+full_text= ⭘ 
+width=60
+command=notify-send 'Sleeping' && systemctl suspend
+
+[reboot]
+full_text= ⏼ 
+width=60
+command=notify-send 'Rebooting the Desktop' && systemctl reboot
+
+[power]
+full_text= ⏻  
+width=60
+command=notify-send 'Turning Off the Desktop' && systemctl poweroff
 
 ##### Blocklets #####

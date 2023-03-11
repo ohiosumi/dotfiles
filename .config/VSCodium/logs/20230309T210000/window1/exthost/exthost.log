@@ -1,0 +1,16 @@
+2023-03-09 21:00:02.011 [info] Extension host with pid 57234 started
+2023-03-09 21:00:02.011 [info] Skipping acquiring lock for /home/sumi/.config/VSCodium/User/workspaceStorage/33a0a9475b91f14bdcae66faaaa2d7bf.
+2023-03-09 21:00:02.135 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2023-03-09 21:00:02.136 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2023-03-09 21:00:02.136 [info] ExtensionService#_doActivateExtension formulahendry.auto-close-tag, startup: true, activationEvent: '*'
+2023-03-09 21:00:02.137 [info] ExtensionService#_doActivateExtension naumovs.color-highlight, startup: true, activationEvent: '*'
+2023-03-09 21:00:02.177 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2023-03-09 21:00:02.178 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2023-03-09 21:00:02.255 [info] Eager extensions activated
+2023-03-09 21:00:02.338 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2023-03-09 21:00:02.339 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2023-03-09 21:00:02.339 [info] ExtensionService#_doActivateExtension PKief.material-icon-theme, startup: false, activationEvent: 'onStartupFinished'
+2023-03-09 21:00:02.340 [info] ExtensionService#_doActivateExtension ritwickdey.LiveServer, startup: false, activationEvent: 'onStartupFinished'
+2023-03-09 21:00:02.340 [info] ExtensionService#_doActivateExtension sainnhe.gruvbox-material, startup: false, activationEvent: 'onStartupFinished'
+2023-03-09 21:00:03.199 [info] Extension host terminating: received terminate message from renderer
+2023-03-09 21:00:03.206 [info] Extension host with pid 57234 exiting with code 0

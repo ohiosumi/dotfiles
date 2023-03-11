@@ -1,0 +1,107 @@
+# Alacirtty Dotfiles
+# Creater? Sumi
+
+env:
+  TERM: xterm-256color
+
+window:
+  #decorations: full
+  #startup_mode: Windowed
+  padding:
+    x: 8
+    y: 8
+  dynamic_padding: false
+  opacity: 0.99
+ 
+  title: Terminal
+  class:
+    instance: Terminal
+    general: Terminal
+
+scrolling:
+  auto_scroll: true
+  history: 5000
+
+font:
+  size: 12
+  normal:
+      family: RobotoMono Nerd Font
+      style: Regular
+  bold:
+      family: RobotoMono Nerd Font
+      style: Bold
+  italic:
+      family: RobotoMono Nerd Font
+      style: Italic
+  bold_italic:
+      family: RobotoMono Nerd Font
+      style: Bold Italic
+  offset:
+    x: 0
+    y: 1
+  draw_bold_text_with_bright_colors: true
+
+schemes:
+  MonokaiPro: &MonokaiPro
+    # Default colors
+    primary:
+      background: '#000009'
+      foreground: '#FCFCFA'
+
+    # Normal colors
+    normal:
+      black:   '#403E41'
+      red:     '#FF6188'
+      green:   '#A9DC76'
+      yellow:  '#FFD866'
+      blue:    '#FC9867'
+      magenta: '#AB9DF2'
+      cyan:    '#78DCE8'
+      white:   '#FCFCFA'
+
+    # Bright colors
+    bright:
+      black:   '#727072'
+      red:     '#FF6188'
+      green:   '#A9DC76'
+      yellow:  '#FFD866'
+      blue:    '#FC9867'
+      magenta: '#AB9DF2'
+      cyan:    '#78DCE8'
+      white:   '#FCFCFA'
+
+colors: *MonokaiPro
+
+cursor:
+  style: Beam
+  unfocused_hollow: true
+
+selection:
+  save_to_clipboard: true
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+
+mouse:
+  hide_when_typing: true
+
+mouse_bindings:
+  - { mouse: Right, action: PasteSelection }
+
+key_bindings:
+  - { key: V,         mods: Control|Shift, action: Paste                       }
+  - { key: V,         mods: Alt|Shift, action: Paste                           }
+  - { key: C,         mods: Control|Shift, action: Copy                        }
+  - { key: C,         mods: Alt|Shift, action: Copy                            }
+  - { key: Insert,    mods: Shift,         action: PasteSelection              }
+  - { key: Key0,      mods: Control,       action: ResetFontSize               }
+  - { key: Equals,    mods: Control,       action: IncreaseFontSize            }
+  - { key: Plus,      mods: Control,       action: IncreaseFontSize            }
+  - { key: Minus,     mods: Control,       action: DecreaseFontSize            }
+  - { key: F11,       mods: None,          action: ToggleFullscreen            }
+  - { key: Paste,     mods: None,          action: Paste                       }
+  - { key: Copy,      mods: None,          action: Copy                        }
+  - { key: L,         mods: Control,       action: ClearLogNotice              }
+  - { key: L,         mods: Control,       chars: "\x0c"                       }
+  - { key: PageUp,    mods: None,          action: ScrollPageUp,   mode: ~Alt  }
+  - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
+  - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
+  - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }

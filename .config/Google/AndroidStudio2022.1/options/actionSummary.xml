@@ -1,0 +1,43 @@
+<application>
+  <component name="ActionsLocalSummary">
+    <e n="Android.RunAndroidSdkManager">
+      <i c="1" l="1678228435883" />
+    </e>
+    <e n="Android.SyncProject">
+      <i c="1" l="1678228627095" />
+    </e>
+    <e n="EditorBackSpace">
+      <i c="9" l="1678227996906" />
+    </e>
+    <e n="Exit">
+      <i c="1" l="1678228785906" />
+    </e>
+    <e n="Run">
+      <i c="1" l="1678228680958" />
+    </e>
+    <e n="SearchEverywhere">
+      <i c="1" l="1678228095487" />
+    </e>
+    <e n="ShowProjectStructureSettings">
+      <i c="1" l="1678228294002" />
+    </e>
+    <e n="Stop">
+      <i c="1" l="1678228777735" />
+    </e>
+    <e n="WelcomeScreen.CreateNewProject">
+      <i c="2" l="1678228035262" />
+    </e>
+    <e n="com.intellij.openapi.fileEditor.impl.tabActions.CloseTab">
+      <i c="1" l="1678228211806" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.status.widget.StatusBarWidgetsActionGroup$HideCurrentWidgetAction">
+      <i c="1" l="1678228352855" />
+    </e>
+    <e n="com.intellij.openapi.wm.impl.status.widget.StatusBarWidgetsActionGroup$ToggleWidgetAction">
+      <i c="18" l="1678228554299" />
+    </e>
+    <e n="com.intellij.toolWindow.ToolWindowHeader$HideAction">
+      <i c="2" l="1678228573172" />
+    </e>
+  </component>
+</application>

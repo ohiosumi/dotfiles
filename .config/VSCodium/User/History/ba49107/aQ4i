@@ -1,0 +1,73 @@
+##### Defaults #####
+color=#ebdbb2
+markup=pango
+align=center
+separator=true
+full_text=〉
+##### Defaults #####
+
+##### Blocklets #####
+
+[window]
+color=#b8bb26
+interval=1
+command=xdotool getactivewindow getwindowname
+[separator]
+
+[brightness]
+interval=once
+command=brightnessctl g | awk '{ printf "%i<span color=\"#b16286\"></span>\n", $1 }'
+[separator]
+
+[battery]
+interval=60
+command=cat /sys/class/power_supply/BAT1/capacity | awk '{ printf "%i<span color=\"#b16286\">%</span>\n", $1 }'
+[separator]
+
+[date]
+interval=60
+command=date '+%d, %A %b%l:%M'
+[separator]
+full_text=|
+
+[wifi]
+label=<span color="#fabd2f">  </span>
+interval=once
+instance=wlp11s0f3u1
+command=iwgetid -r
+[separator]
+
+[run]
+full_text=󱓞 
+width=60
+command=rofi -show drun >/dev/null
+
+[clip]
+full_text=  
+width=60
+command=
+
+[screenshot]
+full_text= 󰹑 
+width=60
+command=scrot
+
+[separator]
+full_text= |
+
+[sleep]
+full_text= ⭘ 
+width=60
+command=notify-send 'Sleeping' && systemctl suspend
+
+[reboot]
+full_text= ⏼ 
+width=60
+command=notify-send 'Rebooting the Desktop' && systemctl reboot
+
+[power]
+full_text= ⏻  
+width=60
+command=notify-send 'Turning Off the Desktop' && systemctl poweroff
+
+##### Blocklets #####

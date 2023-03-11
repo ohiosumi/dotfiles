@@ -1,0 +1,15 @@
+2023/03/11-18:35:59.140 3 Reusing MANIFEST /home/sumi/.config/BraveSoftware/Brave-Browser/Default/Session Storage/MANIFEST-000001
+2023/03/11-18:35:59.143 3 Recovering log #52
+2023/03/11-18:35:59.144 3 Reusing old log /home/sumi/.config/BraveSoftware/Brave-Browser/Default/Session Storage/000052.log 
+2023/03/11-19:28:56.090 3 Level-0 table #56: started
+2023/03/11-19:28:56.094 3 Level-0 table #56: 21005 bytes OK
+2023/03/11-19:28:56.097 3 Delete type=0 #52
+2023/03/11-19:28:56.098 3 Compacting 4@0 + 1@1 files
+2023/03/11-19:28:56.105 3 Generated table #57@0: 3986 keys, 121999 bytes
+2023/03/11-19:28:56.105 3 Compacted 4@0 + 1@1 files => 121999 bytes
+2023/03/11-19:28:56.107 3 compacted to: files[ 0 1 1 0 0 0 0 ]
+2023/03/11-19:28:56.108 3 Delete type=2 #53
+2023/03/11-19:28:56.109 3 Delete type=2 #45
+2023/03/11-19:28:56.109 3 Delete type=2 #48
+2023/03/11-19:28:56.109 3 Delete type=2 #51
+2023/03/11-19:28:56.109 3 Delete type=2 #56

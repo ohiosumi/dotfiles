@@ -1,0 +1,17 @@
+#!/bin/bash
+
+actions=("poweroff" "reboot" "suspend")
+
+foreground_color="#FCFCFA"
+background_color="#403E41"
+highlight_color="#FF6188"
+
+selected_action=$(printf '%s\n' "${actions[@]}" | dmenu -i -p "Action:" \
+    -nb "$background_color" \
+    -nf "$foreground_color" \
+    -sb "$highlight_color" \
+    -sf "$background_color")
+
+if [ -n "$selected_action" ]; then
+  systemctl $selected_action
+fi
